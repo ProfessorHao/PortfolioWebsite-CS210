@@ -3,17 +3,26 @@
 <head>
   <link rel = "stylesheet" href="styles.css">
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Roman Salazar's Portfolio</title>
-  <link rel="icon" type="image/png" href="Screenshot 2025-10-28 111249.png">
+  <link rel="icon" type="image/png" href="images/Screenshot 2025-10-28 111249.png">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
 
 
 <div class ="startCard">
 
-    <p>Roman Salazar</p>
+<p>/**
+ * @Roman Salazar (RASalazar@nic.edu) <br>
+ * @version 7.77 <br>
+ * @date 2025-12-04 <br>
+ * 
+ * 
+ */</p>
 
 
 
@@ -27,9 +36,70 @@
 </div>
     <div class="project">Video Game: <a href="https://github.com/Ian-Codding-II/Centipede-Game" target="_blank"> Centipede Game </a></div>
     <div class="project">Tic-Tac-Toe: <a href="https://github.com/CS270-Fall2025/pa1-ProfessorHao" target="_blank"> Random Bot Movement Tic-Tac-Toe </a></div>
+    <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } 
+       
+    <br>  Skills: Some Math Knowledge (Calculus Sequence + Linear Algebra)<br> Primary Languages: C and C++  <br> Currently learning: Python, HTML, CSS, and Javascript <br>  } </p>
 </div>
 
+<div class = "middleCard">
+</div> 
 
+<div class = "middleCardDeco">
+
+    
+</div>
+
+<div class="personalInformationBox">
+    <p>
+        My name is Roman Salazar and I'm currently a Computer Science student at NIC.<br>
+        The majority of my experience is with C++ although I have some experience with C, Python, BASH scripting, and (HTML, CSS, Javascript).
+    </p>
+    <button onclick="showExtra()">More Information</button>
+
+    <div id="extraInfo" class="extraInfoBox">
+        <p>
+            I am currently learning Python, HTML, CSS, and JavaScript. <br>
+            I also enjoy problem-solving and developing small projects to practice my skills.
+        </p>
+        <button onclick="hideExtra()"> Close </button>
+    </div>
+</div>
+
+<div class = "inProgressProjects">
+   
+    <div class = "firstProject">
+        Lexer|: Parser used to classify "lexemes" derived from fake languages.
+        <img src = images/LexerImage.png id = "lexerImage">
+        <div class = "nestedBox">
+          Developed using C
+        </div>
+        
+
+   </div>
+   
+   <div class = "secondProject">
+
+    Centipede|: A Retro Atari Centipede Game Clone
+            <img src = images/Centipede.png id = "Centipede">
+
+              <div class = "nestedBox">
+          Developed using C++
+        </div>
+   </div>
+
+   <div class = "thirdProject">
+    Tic-Tac-Toe|:
+    Uses input validation for user input and 'random' seeding for CPU movement.
+            <img src = images/TicTacToe.png id = "lexerImage">
+              <div class = "nestedBox">
+          Developed using C
+        </div>
+
+   </div>
+
+</div>
+
+<script src="functions.js"></script>
 
 </body>
 </html>   
