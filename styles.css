@@ -29,7 +29,10 @@ html, body {
 
 }
 
-
+.extraInfoBox
+{
+  display: none;
+}
 .leftSide
 {
   margin-left: 30px;
@@ -37,12 +40,6 @@ html, body {
 
 }
 
-.nestedIf
-{
-
-
-
-}
 
 .experienceCard
 {
@@ -84,8 +81,8 @@ html, body {
 {
   font-size: larger;
   justify-content: left;  
-    font-size: clamp(14px, 1.5vw, 22px);
-    line-height: 1.4;
+  font-size: clamp(14px, 1.5vw, 22px);
+  line-height: 1.4;
   padding: 20px;
   background-color: wheat;
   outline: auto;
@@ -97,6 +94,7 @@ html, body {
   border: 2px solid red;
   box-sizing: border-box;
 }
+
 @media (max-width: 1400px) {  
     .middleCardDeco {
         display: none;  /* Stop displaying the bar on smaller screen size s. */
@@ -123,14 +121,17 @@ html, body {
     width: 100%;
 }
 
-.inProgressProjects {
+.finishedProjects {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    align-items: flex-end;   
+    align-items: flex-start;   
     margin-left: auto;
     margin-top: 0;
     width: 100%;
+    padding-left: 5%;
+    margin-right: 5%
+    
 }
 
 
@@ -142,39 +143,60 @@ html, body {
     text-align: left;
 }
 
-.inProgressProjects .firstProject {
+.finishedProjects .firstProject {
     position: relative;
     background-color: rgb(255, 0, 0);
-    padding: 20px;
-    width: 500px;
-    height: 100px;
+    padding: 1.5rem;          
+    width: min(90%, 600px);     
+    min-width: 300px;          
+    height: auto;              
+    box-sizing: border-box;     
+    margin-bottom: 2vw;         
+    font-size: clamp(16px, 2vw, 22px); 
+    line-height: 1.4;           
+    border: 2px solid black;
+    border-radius: 15px;
 
   
 
     
 }
 
-.inProgressProjects .secondProject {
+.finishedProjects .secondProject {
     position: relative;
-    background-color: rgb(255, 0, 0);
-    padding: 20px;
-    width: 500px;
-    height: 100px;
-
+    background-color: rgb(25, 148, 0);
+    padding: 1.5rem;          
+    width: min(90%, 600px);     
+    min-width: 300px;          
+    height: auto;              
+    box-sizing: border-box;     
+    margin-bottom: 2vw;         
+    font-size: clamp(16px, 2vw, 22px); 
+    line-height: 1.4;           
+    border: 2px solid black;
+    border-radius: 15px;
 
     
    
 }
-.inProgressProjects .thirdProject {
+.finishedProjects .thirdProject {
     position: relative;
-    background-color: rgb(255, 0, 0);
-    padding: 20px;
-    width: 500px;
-    height: 100px;
+    background-color: rgb(0, 108, 158);
+    padding: 1.5rem;          
+    width: min(90%, 600px);     
+    min-width: 300px;          
+    height: auto;              
+    box-sizing: border-box;     
+    margin-bottom: 2vw;         
+    font-size: clamp(16px, 2vw, 22px); 
+    line-height: 1.4;           
+    border: 2px solid black;
+    border-radius: 15px;
+    
 
   
 }
-.inProgressProjects img {
+.finishedProjects img {
     width: 200px;               
     height: 120px;              
     border: 3px solid white;    
