@@ -1,7 +1,7 @@
 body {
     background-color: cornsilk;
     font-family: 'Times New Roman', Times, serif;
-    
+    font-size: 16px; 
   
 }
 
@@ -84,12 +84,12 @@ html, body {
 {
   font-size: larger;
   justify-content: left;  
-  
+    font-size: clamp(14px, 1.5vw, 22px);
+    line-height: 1.4;
   padding: 20px;
   background-color: wheat;
   outline: auto;
-    font-size: clamp(14px, 1.5vw, 20px);
-    line-height: 1.4;
+   
   width: min(50vw, 400px);   
   min-width: 30vw; 
   padding: 1vw;    
